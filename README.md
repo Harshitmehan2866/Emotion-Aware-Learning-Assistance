@@ -1,120 +1,205 @@
-# 🤖 Emotion AI Assistant using BERT (Fine-Tuned)
+# 🎓 Emotion Aware Learning Assistance
 
-## 📌 Project Overview
-This project is an AI-powered **Emotion Detection System** built using a fine-tuned **BERT (Bidirectional Encoder Representations from Transformers)** model.  
-The model is trained on an emotion classification dataset and deployed using **Streamlit** for real-time predictions.
-
-The system predicts emotions from text and visualizes confidence scores for better interpretability.
+An AI-powered educational support system that detects students' emotions from learning-related text using **BiLSTM** and **BERT**, generates personalized guidance using **Google Gemini AI**, and provides an interactive **Streamlit dashboard** for emotion analysis, model comparison, analytics, and learning support.
 
 ---
 
-## 🚀 Features
+# 🚀 Project Overview
 
-- 🔍 Real-time emotion detection from user input text  
-- 🤖 Fine-tuned BERT transformer model  
-- 📊 Top-3 emotion probability visualization  
-- 😄 Emoji-based emotion output  
-- 📜 Prediction history tracking  
-- 🧹 Clear history option  
-- ⚡ Fast inference using cached model loading  
-- 📈 Visual insights using bar charts  
+Learning can often be frustrating, confusing, or overwhelming. This project helps identify a student's emotional state from their written learning challenges and provides personalized AI-generated guidance to improve their learning experience.
+
+The system combines deep learning, transformer-based NLP, generative AI, and an interactive dashboard into one complete educational support platform.
 
 ---
 
-## 🧠 Emotion Classes
+# ✨ Features
 
-- Anger 😡  
-- Fear 😨  
-- Joy 😄  
-- Love ❤️  
-- Sadness 😢  
-
-*(Based on training dataset labels)*
-
----
-
-## 🏗️ Tech Stack
-
-- Python 🐍  
-- PyTorch 🔥  
-- HuggingFace Transformers 🤗  
-- Streamlit 🌐  
-- Pandas 📊  
-- Matplotlib 📈  
+- 🎯 Emotion Detection using BiLSTM
+- 🤖 Emotion Detection using BERT Transformer
+- 🧠 Mixed Emotion Detection
+- 📊 Model Comparison (BiLSTM vs BERT)
+- 💡 AI-Powered Learning Guidance using Gemini AI
+- 📈 Interactive Analytics Dashboard
+- 📚 Personalized Learning Recommendations
+- 💾 Session History & CSV Logging
+- ⚡ Streamlit Interactive Web Application
+- 🚀 Deployment Ready
 
 ---
 
-## 📂 Project Structure
+# 🛠 Tech Stack
 
-```plaintext
-Emotion-AI-Project/
+- Python
+- Streamlit
+- TensorFlow / Keras
+- PyTorch
+- Hugging Face Transformers
+- Google Gemini AI
+- Plotly
+- Pandas
+- NumPy
+- Scikit-learn
+
+---
+
+# 📂 Development Journey (Epics)
+
+This project was developed incrementally through multiple software development epics.
+
+| Epic | Description | Repository |
+|------|-------------|------------|
+| Epic 1 | Environment Setup & Initial Streamlit Application | https://github.com/Harshitmehan2866/Emotion-Detection-Learning-Support |
+| Epic 2 | Emotion Model Training & Dataset Preparation | https://github.com/Harshitmehan2866/Epic-2-Emotion-Model-Training |
+| Epic 3 | Emotion Detection Engine (BiLSTM + BERT) | https://github.com/Harshitmehan2866/Emotion-Detection-Learning-Support-Engine |
+| Epic 4 | AI Guidance & Regeneration Engine | https://github.com/Harshitmehan2866/AI-Guidance-Regeneration-Engine |
+| Epic 5 | Streamlit UI Implementation | https://github.com/Harshitmehan2866/AI-Emotion-Detection-Streamlit-UI |
+| Epic 6 | User Interaction, Analytics & Deployment Readiness | *(In Progress)* |
+
+---
+
+# 🧠 System Workflow
+
+```
+Student Input
+      │
+      ▼
+Text Preprocessing
+      │
+      ▼
+BiLSTM Prediction
+      │
+      ▼
+BERT Prediction
+      │
+      ▼
+Emotion Comparison
+      │
+      ▼
+Gemini AI Guidance
+      │
+      ▼
+Analytics Dashboard
+      │
+      ▼
+Session History
+```
+
+---
+
+# 📊 Application Modules
+
+## Emotion Detection
+
+- BiLSTM Model
+- BERT Transformer
+- Mixed Emotion Detection
+- Confidence Scores
+
+---
+
+## AI Learning Support
+
+- Personalized Learning Guidance
+- Gemini AI Response
+- Study Tips
+- Motivation Support
+- Learning Resources
+
+---
+
+## Analytics Dashboard
+
+- Emotion Distribution
+- Emotion by Study Field
+- Model Comparison
+- Session Summary
+- Learning Analytics
+
+---
+
+# 📷 Application Preview
+
+The application includes:
+
+- Emotion Aware Learning Assistance
+- Learning Challenge Input
+- Study Field Selection
+- Model Comparison
+- Confidence Bars
+- Mixed Emotion Detection
+- AI Guidance Panel
+- Analytics Dashboard
+- Session History
+- Deployment Status
+
+---
+
+# 📁 Project Structure
+
+```
+Emotion-Aware-Learning-Assistance
 │
-├── app.py                         # Streamlit web application
-├── requirements.txt               # Dependencies
-├── README.md                      # Project documentation
-│
-├── models/
-│   └── bert_emotion_model_final/  # Fine-tuned BERT model
-│
-├── training/
-│   └── bert_training.ipynb        # Training notebook (all epochs included here)
-│
-└── images/
-    └── demo.png                   # Optional UI screenshot
-🧠 Model Training Details
-📌 Model Used
-BERT Base Uncased (Fine-tuned for classification)
-📌 Dataset
-Emotion classification dataset (e.g., GoEmotions / custom labeled dataset)
-📊 Training Summary (IMPORTANT)
+├── app.py
+├── requirements.txt
+├── README.md
+├── utils/
+├── data/
+├── assets/
+└── screenshots/
+```
 
-The model was trained for multiple epochs to improve convergence and accuracy:
+---
 
-Epoch	Loss (approx)	Observation
-1	1.20	High loss, initial learning
-2	0.85	Model starts learning patterns
-3	0.62	Improved stability
-4	0.45	Better classification boundaries
-5	0.30	Final convergence achieved
+# ▶️ Installation
 
-✔ Final model selected from last epoch due to best validation performance.
+Clone the repository
 
-📈 Performance
-Improved accuracy after each epoch
-Stable convergence after epoch 4
-Final model shows strong generalization on unseen text
-⚙️ How to Run Locally
-1️⃣ Clone repository
-git clone https://github.com/your-username/emotion-ai-project.git
-cd emotion-ai-project
-2️⃣ Install dependencies
+```bash
+git clone https://github.com/Harshitmehan2866/Emotion-Aware-Learning-Assistance.git
+```
+
+Install dependencies
+
+```bash
 pip install -r requirements.txt
-3️⃣ Run Streamlit app
+```
+
+Run the application
+
+```bash
 streamlit run app.py
-📊 Example Output
+```
 
-Input:
+---
 
-I am extremely happy today, everything worked out perfectly!
+# 🤖 Trained Models
 
-Output:
+Due to GitHub's file size limitations, the trained BiLSTM and BERT models are not stored in this repository.
 
-😄 Emotion: Joy  
-Confidence: 93.21%
-🚀 Key Improvements
-Top-3 emotion probability display
-Softmax-based confidence scoring
-Emoji-enhanced UI
-History tracking system
-Clean transformer-based pipeline
-🔮 Future Enhancements
-🎤 Voice-based emotion detection
-💬 Chatbot-style interface
-🌐 Cloud deployment (Streamlit / HuggingFace Spaces)
-📊 Advanced analytics dashboard
-🧠 Multi-language emotion detection
-👨‍💻 Author
+The trained models are hosted separately and can be downloaded before running the application.
 
-Harshit Mehan
-B.Tech CSE Student
-AI / ML Enthusiast | Deep Learning Explorer
+---
+
+# 🎯 Future Improvements
+
+- Voice Emotion Detection
+- Speech-to-Text Support
+- Learning Progress Prediction
+- Multi-language Support
+- Student Performance Dashboard
+- Mobile Application
+- Cloud Deployment
+
+---
+
+# 👨‍💻 Author
+
+**Harshit Mehan**
+
+B.Tech Computer Science Engineering
+
+Passionate about Artificial Intelligence, Machine Learning, NLP, and Educational Technology.
+
+---
+
+## ⭐ If you found this project useful, consider giving it a Star!
