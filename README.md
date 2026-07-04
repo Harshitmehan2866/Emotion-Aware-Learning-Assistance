@@ -1,14 +1,21 @@
 # 🎓 Emotion Aware Learning Assistance
 
-An AI-powered educational support system that detects students' emotions from learning-related text using **BiLSTM** and **BERT**, generates personalized guidance using **Google Gemini AI**, and provides an interactive **Streamlit dashboard** for emotion analysis, model comparison, analytics, and learning support.
+An AI-powered educational support system that detects students' emotions from learning-related text using **BiLSTM** and **BERT**, generates personalized guidance using **Google Gemini AI**, and provides an interactive **Streamlit dashboard** for emotion-aware learning support.
 
 ---
 
-# 🚀 Project Overview
+# 🌟 Project Overview
 
-Learning can often be frustrating, confusing, or overwhelming. This project helps identify a student's emotional state from their written learning challenges and provides personalized AI-generated guidance to improve their learning experience.
+Learning can be challenging, especially when students experience emotions such as confusion, frustration, boredom, or anxiety. This project aims to identify these emotions from textual learning challenges and provide intelligent, personalized guidance to improve the overall learning experience.
 
-The system combines deep learning, transformer-based NLP, generative AI, and an interactive dashboard into one complete educational support platform.
+The system integrates:
+
+- 🧠 BiLSTM Emotion Detection
+- 🤖 BERT Transformer Classification
+- 💡 Google Gemini AI Guidance
+- 📊 Interactive Streamlit Dashboard
+- 📈 Learning Analytics
+- 💾 Session History & Logging
 
 ---
 
@@ -16,14 +23,15 @@ The system combines deep learning, transformer-based NLP, generative AI, and an 
 
 - 🎯 Emotion Detection using BiLSTM
 - 🤖 Emotion Detection using BERT Transformer
-- 🧠 Mixed Emotion Detection
-- 📊 Model Comparison (BiLSTM vs BERT)
-- 💡 AI-Powered Learning Guidance using Gemini AI
-- 📈 Interactive Analytics Dashboard
+- 😊 Mixed Emotion Detection
+- 📊 BiLSTM vs BERT Comparison
+- 💡 AI-Powered Learning Guidance
 - 📚 Personalized Learning Recommendations
-- 💾 Session History & CSV Logging
-- ⚡ Streamlit Interactive Web Application
-- 🚀 Deployment Ready
+- 📈 Analytics Dashboard
+- 📜 Session History
+- 💾 CSV Logging
+- ⚡ Interactive Streamlit Interface
+- 🚀 Deployment Ready Architecture
 
 ---
 
@@ -42,9 +50,9 @@ The system combines deep learning, transformer-based NLP, generative AI, and an 
 
 ---
 
-# 📂 Development Journey (Epics)
+# 📚 Development Journey
 
-This project was developed incrementally through multiple software development epics.
+The project was developed incrementally across multiple epics.
 
 | Epic | Description | Repository |
 |------|-------------|------------|
@@ -53,88 +61,40 @@ This project was developed incrementally through multiple software development e
 | Epic 3 | Emotion Detection Engine (BiLSTM + BERT) | https://github.com/Harshitmehan2866/Emotion-Detection-Learning-Support-Engine |
 | Epic 4 | AI Guidance & Regeneration Engine | https://github.com/Harshitmehan2866/AI-Guidance-Regeneration-Engine |
 | Epic 5 | Streamlit UI Implementation | https://github.com/Harshitmehan2866/AI-Emotion-Detection-Streamlit-UI |
-| Epic 6 | User Interaction, Analytics & Deployment Readiness | *(In Progress)* |
+| Epic 6 | User Interaction, Analytics & Deployment Readiness | Included in this repository |
 
 ---
 
 # 🧠 System Workflow
 
 ```
-Student Input
-      │
-      ▼
-Text Preprocessing
-      │
-      ▼
-BiLSTM Prediction
-      │
-      ▼
-BERT Prediction
-      │
-      ▼
-Emotion Comparison
-      │
-      ▼
-Gemini AI Guidance
-      │
-      ▼
-Analytics Dashboard
-      │
-      ▼
-Session History
+Student Learning Challenge
+          │
+          ▼
+   Text Preprocessing
+          │
+          ▼
+    BiLSTM Prediction
+          │
+          ▼
+     BERT Prediction
+          │
+          ▼
+ Emotion Comparison
+          │
+          ▼
+ Gemini AI Guidance
+          │
+          ▼
+ Analytics Dashboard
+          │
+          ▼
+ Session History & Logs
 ```
 
 ---
 
-# 📊 Application Modules
-
-## Emotion Detection
-
-- BiLSTM Model
-- BERT Transformer
-- Mixed Emotion Detection
-- Confidence Scores
-
----
-
-## AI Learning Support
-
-- Personalized Learning Guidance
-- Gemini AI Response
-- Study Tips
-- Motivation Support
-- Learning Resources
-
----
-
-## Analytics Dashboard
-
-- Emotion Distribution
-- Emotion by Study Field
-- Model Comparison
-- Session Summary
-- Learning Analytics
-
----
-
-# 📷 Application Preview
-
-The application includes:
-
-- Emotion Aware Learning Assistance
-- Learning Challenge Input
-- Study Field Selection
-- Model Comparison
-- Confidence Bars
-- Mixed Emotion Detection
-- AI Guidance Panel
-- Analytics Dashboard
-- Session History
-- Deployment Status
-
----
-
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```
 Emotion-Aware-Learning-Assistance
@@ -143,19 +103,58 @@ Emotion-Aware-Learning-Assistance
 ├── requirements.txt
 ├── README.md
 ├── utils/
-├── data/
 ├── assets/
-└── screenshots/
+├── data/
+├── screenshots/
+└── models/
 ```
 
 ---
 
-# ▶️ Installation
+# 📊 Dashboard Features
+
+### 🎓 Emotion Aware Learning Assistance
+- Study Field Selection
+- Learning Challenge Input
+- AI Settings
+
+### 🤖 Emotion Detection
+- BiLSTM Prediction
+- BERT Prediction
+- Mixed Emotion Detection
+- Confidence Scores
+
+### 💡 AI Learning Support
+- Gemini AI Guidance
+- Personalized Learning Advice
+- Study Tips
+- Additional Support
+
+### 📈 Analytics Dashboard
+- Emotion Distribution
+- Emotion by Study Field
+- Model Comparison
+- Learning Summary
+
+### 📜 Session Management
+- History Tracking
+- CSV Logging
+- Deployment Ready
+
+---
+
+# 🚀 Installation
 
 Clone the repository
 
 ```bash
 git clone https://github.com/Harshitmehan2866/Emotion-Aware-Learning-Assistance.git
+```
+
+Move into the project folder
+
+```bash
+cd Emotion-Aware-Learning-Assistance
 ```
 
 Install dependencies
@@ -174,21 +173,26 @@ streamlit run app.py
 
 # 🤖 Trained Models
 
-Due to GitHub's file size limitations, the trained BiLSTM and BERT models are not stored in this repository.
+The trained BiLSTM and BERT models are **not included** in this repository because they exceed GitHub's file size limits.
 
-The trained models are hosted separately and can be downloaded before running the application.
+They are hosted separately and should be downloaded before running the application.
 
 ---
 
-# 🎯 Future Improvements
+# 📸 Screenshots
 
-- Voice Emotion Detection
-- Speech-to-Text Support
-- Learning Progress Prediction
-- Multi-language Support
-- Student Performance Dashboard
-- Mobile Application
-- Cloud Deployment
+Application screenshots will be added after completing the final Streamlit interface.
+
+---
+
+# 🎯 Future Enhancements
+
+- 🎤 Voice Emotion Detection
+- 🌍 Multi-language Support
+- 📱 Mobile Application
+- ☁ Cloud Deployment
+- 📈 Learning Progress Prediction
+- 🎓 Personalized Study Planner
 
 ---
 
@@ -198,8 +202,13 @@ The trained models are hosted separately and can be downloaded before running th
 
 B.Tech Computer Science Engineering
 
-Passionate about Artificial Intelligence, Machine Learning, NLP, and Educational Technology.
+Interested in:
+- Artificial Intelligence
+- Machine Learning
+- Natural Language Processing
+- Deep Learning
+- Educational Technology
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a Star!
+## ⭐ If you found this project useful, please consider giving it a Star!
